@@ -13,10 +13,10 @@ void print_array(int *a, int n)
 	for (no_of_arrays = 0; no_of_arrays < n; no_of_arrays++)
 	{
 		printf("%d", a[no_of_arrays]);
-		if (no_of_arrays != (n - 1))
+		if (no_of_arrays < n - 1)
 		{
-			printf(",");
+			printf(", ");
 		}
 	}
-	putchar('\n');
+	printf("\n");
 }
